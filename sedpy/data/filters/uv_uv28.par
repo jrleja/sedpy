@@ -1,0 +1,33 @@
+# Units:
+#  "lambda" is in Angstroms
+#  "pass" is the contribution to the detector signal per photon
+#         entering the atmosphere of Earth
+#
+# Bandpass Name(s): uv28
+#
+# Instrument: ?
+# 
+# Determined by: ?
+#
+# Date of determination: ?
+#
+# Meaning of/Reason for default column: Only available?
+#
+# Notes:
+#
+# uv28  -  tophat filter 350 angstroms in width, centered at 2800 angstroms
+# i.e. 2800 +- 175
+#
+# Jonathan Cohn
+# 15 January 2017
+
+typedef struct {
+  double lambda;
+  double pass;
+} KFILTER;
+
+KFILTER 2624. 0
+KFILTER 2625. 1.
+KFILTER 2975. 1.
+KFILTER 2976. 0
+

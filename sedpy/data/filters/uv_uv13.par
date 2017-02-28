@@ -1,0 +1,33 @@
+# Units:
+#  "lambda" is in Angstroms
+#  "pass" is the contribution to the detector signal per photon
+#         entering the atmosphere of Earth
+#
+# Bandpass Name(s): uv13
+#
+# Instrument: ?
+# 
+# Determined by: ?
+#
+# Date of determination: ?
+#
+# Meaning of/Reason for default column: Only available?
+#
+# Notes:
+#
+# uv13  -  tophat filter 110 angstroms in width, centered at 1300 angstroms (avoid Lya)
+# i.e. 1300 +- 55
+#
+# Jonathan Cohn
+# 15 January 2017
+
+typedef struct {
+  double lambda;
+  double pass;
+} KFILTER;
+
+KFILTER 1244. 0
+KFILTER 1245. 1.
+KFILTER 1355. 1.
+KFILTER 1356. 0
+

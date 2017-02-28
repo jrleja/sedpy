@@ -1,0 +1,33 @@
+# Units:
+#  "lambda" is in Angstroms
+#  "pass" is the contribution to the detector signal per photon
+#         entering the atmosphere of Earth
+#
+# Bandpass Name(s): uv19
+#
+# Instrument: ?
+# 
+# Determined by: ?
+#
+# Date of determination: ?
+#
+# Meaning of/Reason for default column: Only available?
+#
+# Notes:
+#
+# uv19  -  tophat filter 350 angstroms in width, centered at 1900 angstroms
+# i.e. 1900 +- 175
+#
+# Jonathan Cohn
+# 15 January 2017
+
+typedef struct {
+  double lambda;
+  double pass;
+} KFILTER;
+
+KFILTER 1724. 0
+KFILTER 1725. 1.
+KFILTER 2075. 1.
+KFILTER 2076. 0
+
